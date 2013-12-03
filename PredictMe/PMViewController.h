@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PMViewController : UIViewController
+@class PMPredictor;
+
+@interface PMViewController : UIViewController 
+
+@property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+@property (strong, nonatomic) PMPredictor *predictor;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
 
 @end

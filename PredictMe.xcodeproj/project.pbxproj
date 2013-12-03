@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D86AAF76183FBD7500E692B0 /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D86AAF75183FBD7500E692B0 /* crystal_ball.mp3 */; };
+		D86AAF78183FBDB300E692B0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86AAF77183FBDB300E692B0 /* AudioToolbox.framework */; };
 		D8E06B8D183F5F37009F5037 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E06B8C183F5F37009F5037 /* Foundation.framework */; };
 		D8E06B8F183F5F37009F5037 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E06B8E183F5F37009F5037 /* CoreGraphics.framework */; };
 		D8E06B91183F5F37009F5037 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E06B90183F5F37009F5037 /* UIKit.framework */; };
@@ -21,6 +23,7 @@
 		D8E06BAE183F5F37009F5037 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E06B90183F5F37009F5037 /* UIKit.framework */; };
 		D8E06BB6183F5F37009F5037 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8E06BB4183F5F37009F5037 /* InfoPlist.strings */; };
 		D8E06BB8183F5F37009F5037 /* PredictMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E06BB7183F5F37009F5037 /* PredictMeTests.m */; };
+		D8E06BC3183F6F92009F5037 /* PMPredictor.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E06BC2183F6F92009F5037 /* PMPredictor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D86AAF75183FBD7500E692B0 /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
+		D86AAF77183FBDB300E692B0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D8E06B89183F5F37009F5037 /* PredictMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PredictMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E06B8C183F5F37009F5037 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8E06B8E183F5F37009F5037 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,8 @@
 		D8E06BB3183F5F37009F5037 /* PredictMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PredictMeTests-Info.plist"; sourceTree = "<group>"; };
 		D8E06BB5183F5F37009F5037 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8E06BB7183F5F37009F5037 /* PredictMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PredictMeTests.m; sourceTree = "<group>"; };
+		D8E06BC1183F6F92009F5037 /* PMPredictor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPredictor.h; sourceTree = "<group>"; };
+		D8E06BC2183F6F92009F5037 /* PMPredictor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPredictor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86AAF78183FBDB300E692B0 /* AudioToolbox.framework in Frameworks */,
 				D8E06B8F183F5F37009F5037 /* CoreGraphics.framework in Frameworks */,
 				D8E06B91183F5F37009F5037 /* UIKit.framework in Frameworks */,
 				D8E06B8D183F5F37009F5037 /* Foundation.framework in Frameworks */,
@@ -101,6 +109,7 @@
 		D8E06B8B183F5F37009F5037 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D86AAF77183FBDB300E692B0 /* AudioToolbox.framework */,
 				D8E06B8C183F5F37009F5037 /* Foundation.framework */,
 				D8E06B8E183F5F37009F5037 /* CoreGraphics.framework */,
 				D8E06B90183F5F37009F5037 /* UIKit.framework */,
@@ -112,11 +121,11 @@
 		D8E06B92183F5F37009F5037 /* PredictMe */ = {
 			isa = PBXGroup;
 			children = (
-				D8E06B9B183F5F37009F5037 /* PMAppDelegate.h */,
-				D8E06B9C183F5F37009F5037 /* PMAppDelegate.m */,
 				D8E06B9E183F5F37009F5037 /* Main.storyboard */,
 				D8E06BA1183F5F37009F5037 /* PMViewController.h */,
 				D8E06BA2183F5F37009F5037 /* PMViewController.m */,
+				D8E06BC1183F6F92009F5037 /* PMPredictor.h */,
+				D8E06BC2183F6F92009F5037 /* PMPredictor.m */,
 				D8E06BA4183F5F37009F5037 /* Images.xcassets */,
 				D8E06B93183F5F37009F5037 /* Supporting Files */,
 			);
@@ -126,6 +135,9 @@
 		D8E06B93183F5F37009F5037 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D86AAF75183FBD7500E692B0 /* crystal_ball.mp3 */,
+				D8E06B9B183F5F37009F5037 /* PMAppDelegate.h */,
+				D8E06B9C183F5F37009F5037 /* PMAppDelegate.m */,
 				D8E06B94183F5F37009F5037 /* PredictMe-Info.plist */,
 				D8E06B95183F5F37009F5037 /* InfoPlist.strings */,
 				D8E06B98183F5F37009F5037 /* main.m */,
@@ -231,6 +243,7 @@
 			files = (
 				D8E06BA5183F5F37009F5037 /* Images.xcassets in Resources */,
 				D8E06B97183F5F37009F5037 /* InfoPlist.strings in Resources */,
+				D86AAF76183FBD7500E692B0 /* crystal_ball.mp3 in Resources */,
 				D8E06BA0183F5F37009F5037 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E06B99183F5F37009F5037 /* main.m in Sources */,
+				D8E06BC3183F6F92009F5037 /* PMPredictor.m in Sources */,
 				D8E06BA3183F5F37009F5037 /* PMViewController.m in Sources */,
 				D8E06B9D183F5F37009F5037 /* PMAppDelegate.m in Sources */,
 			);
@@ -382,6 +396,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PredictMe/PredictMe-Prefix.pch";
 				INFOPLIST_FILE = "PredictMe/PredictMe-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,6 +410,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PredictMe/PredictMe-Prefix.pch";
 				INFOPLIST_FILE = "PredictMe/PredictMe-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -461,6 +477,7 @@
 				D8E06BBD183F5F37009F5037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8E06BBE183F5F37009F5037 /* Build configuration list for PBXNativeTarget "PredictMeTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +486,7 @@
 				D8E06BC0183F5F37009F5037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
